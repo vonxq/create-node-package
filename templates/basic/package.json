@@ -1,0 +1,12 @@
+{
+  "name": "npm-cli-template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "sayHi": "./bin/sayHi.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}

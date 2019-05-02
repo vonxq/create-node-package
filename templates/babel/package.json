@@ -1,0 +1,24 @@
+{
+  "name": "npm-cli-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "sayHi": "./bin/sayHi.js"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-latest-node": "^3.1.1",
+    "babel-preset-stage-3": "^6.24.1"
+  }
+}
