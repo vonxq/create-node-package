@@ -17,12 +17,12 @@ updater({ pkg: pkg }).notify({ defer: true });
 
 if (process.argv.slice(2).join('') === '-v') {
   const pkg = require('../package');
-  console.log('create-package version ' + pkg.version);
+  console.log('node-cli-demo version ' + pkg.version);
   try {
     const cwd = process.cwd();
-    const npPkg = resolve('node_modules/create-package/package.json');
+    const npPkg = resolve('node_modules/node-cli-demo/package.json');
     const npVersion = JSON.parse(readFileSync(npPkg, 'utf-8')).version;
-    console.log('    create-package version ' + npVersion);
+    console.log('    node-cli-demo version ' + npVersion);
   } catch (e) {
   }
   if (!(pkg._from && pkg._resolved)) {
@@ -63,14 +63,13 @@ function wrap(sp) {
 function printHelp() {
   console.log('  Commands:');
   console.log();
-  console.log('    dva           create np like dva');
-  console.log('    basic            create basic');
-  console.log('    babel       create with babel');
+  console.log('    test           log test');
+  console.log('    basic            log basic');
   console.log();
   console.log('  All commands can be run with -h (or --help) for more information.')
 }
 
-function executable(subcmd = 'default') {
+function executable(subcmd = 'test') {
   var file = join(__dirname, 'create-' + subcmd + '.js');
   if (exists(file)) {
     return file;

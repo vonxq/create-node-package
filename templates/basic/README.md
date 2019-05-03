@@ -1,5 +1,7 @@
 
 ## CLI工具使用
+  npm link
+  sayHi
 ## CLI工具制作过程
 ### 最简单的sayHi
 1. npm init
@@ -39,10 +41,3 @@ es6支持
   "plugins": ["transform-es2015-modules-commonjs"]
 }
 ```
-
-### 写逻辑了
-
-
-## 参考
-[一步一步完成一个node-cli](https://www.jianshu.com/p/30cf8cb86ab3)
-[通过npm写一个cli命令行工具](https://www.jianshu.com/p/452a93dce46d)

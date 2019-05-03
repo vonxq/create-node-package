@@ -2,6 +2,7 @@
 ## CLI工具使用
   npm link
   sayHi
+  vonxq-create test targetFolderName
 ## CLI工具制作过程
 ### 最简单的sayHi
 1. npm init
